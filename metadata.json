@@ -1,0 +1,23 @@
+{
+    "KPlugin": {
+        "Name": "Kitty toggle show",
+        "Description": "KWin script to handle toggle visibility of Kitty window",
+        "Icon": "preferences-system-windows",
+
+        "Authors": [
+            {
+                "Email": "ldominguezvega@gmail.com",
+                "Name": "Luis Felipe Domínguez Vega"
+            }
+        ],
+        "Id": "toggler.kitty.h3r3t1c.cu",
+        "ServiceTypes": [
+            "KWin/Script"
+        ],
+        "Version": "1.0",
+        "Licsense": "MIT",
+        "Website": "https://github.com/lfdominguez/kwin-kitty-toggler"
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js"
+}
