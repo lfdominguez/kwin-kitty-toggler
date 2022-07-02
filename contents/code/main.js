@@ -29,7 +29,7 @@ function init()
         }
     }
 
-    registerShortcut("ToggleKittyWindow", "Toggle Kitty window", "F12", toggleClient);
+    registerShortcut("ToggleKittyWindow", "ToggleKittyWindow", "F12", toggleClient);
 }
 
 init();
