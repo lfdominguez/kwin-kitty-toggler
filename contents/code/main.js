@@ -1,8 +1,8 @@
-function init()
+function toggleClient()
 {
     const clients = workspace.clientList();
 
-    var client = null;
+    let client = null;
 
     for (var i = 0; i < clients.length; i++) {
         let client_caption = clients[i].caption;
@@ -14,22 +14,18 @@ function init()
         }
     }
 
-    function toggleClient() {
-        if (client)
+    if (client)
+    {
+        if (client.minimized)
         {
-            if (client.minimized)
-            {
-                client.setMaximize(true, true);
-                client.keepAbove = true;
-                client.keepBelow = false;
-                workspace.activeClient = client;
-            }else{
-                client.minimized = true;
-            }
+            client.setMaximize(true, true);
+            client.keepAbove = true;
+            client.keepBelow = false;
+            workspace.activeClient = client;
+        }else{
+            client.minimized = true;
         }
     }
-
-    registerShortcut("ToggleKittyWindow", "ToggleKittyWindow", "F12", toggleClient);
 }
 
-init();
+registerShortcut("ToggleKittyWindow", "ToggleKittyWindow", "F12", toggleClient);
