@@ -9,7 +9,6 @@ A few ways to install:
  * Symlink this directory to ~/.local/share/kwin/scripts
 
 # Configure
-The kitty window must start the string `:KTKWIN:` to detect the correct window, this can be changed on kitty config. If you are using `fish` kitty will use the fish title information skipping the kitty config.
 When you add KWin script, need to be enabled on KDE configuration system and you must set the Global Shortcut there (find about Toggle Kitty Window).
 
 # Window rules

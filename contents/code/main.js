@@ -5,9 +5,9 @@ function toggleClient()
     let client = null;
 
     for (var i = 0; i < clients.length; i++) {
-        let client_caption = clients[i].caption;
+        let resource_name = clients[i].resourceName;
 
-        if (client_caption.startsWith(":KTKWIN:"))
+        if (resource_name == "kitty")
         {
             client = clients[i];
             break;
@@ -25,6 +25,7 @@ function toggleClient()
         }else{
             client.minimized = true;
         }
+    } else {
     }
 }
 
