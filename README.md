@@ -10,6 +10,9 @@ A few ways to install:
 
 # Configure
  * When you add KWin script, need to be enabled on KDE configuration system and you must set the Global Shortcut there (find about "Toggle Kitty Window").
+   
+   ![hotkey](images/hotkey.webp)
+
  * You must have a `kitty` running because inside KWin scripts can't execute kitty app
 
 # Window rules
